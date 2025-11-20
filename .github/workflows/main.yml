@@ -47,6 +47,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Create env file
+        run: |
+          touch .env
+          echo GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }} >> .env
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
