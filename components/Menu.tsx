@@ -1,7 +1,7 @@
 import React from 'react';
 import { Character, GameState } from '../types';
 import { CHARACTERS } from '../constants';
-import { Play, Trophy, Skateboarding, User } from 'lucide-react';
+import { Play, User } from 'lucide-react';
 
 interface MenuProps {
   setGameState: (state: GameState) => void;
@@ -67,7 +67,7 @@ const Menu: React.FC<MenuProps> = ({
             }`}
           >
             {/* Hover Effect BG */}
-            <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity bg-[${char.color}]`}></div>
+            <div className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity`} style={{ backgroundColor: char.color }}></div>
 
             <div className="h-32 w-full bg-black/50 rounded-lg mb-6 flex items-center justify-center relative overflow-hidden">
                <div className="absolute inset-0 bg-grid-slate-700/[0.2] bg-[length:20px_20px]"></div>
