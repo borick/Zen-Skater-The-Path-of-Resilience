@@ -1,0 +1,5 @@
+{
+  "name": "Zen Skater: The Path of Resilience",
+  "description": "A 2D physics-based skateboarding platformer with 10 procedurally increasing difficulty levels. Features character selection, smooth canvas rendering, and AI-generated wisdom to provide moral lessons after each level.",
+  "requestFramePermissions": []
+}
